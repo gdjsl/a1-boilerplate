@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Test Dashboard</title>
+    <link rel="shortcut icon" href="assets/images/logo/dxc/dxc_symbol_blk_rgb_300.png" type="image/png">
+    <link rel="shortcut icon" type="image/png" href="/assets/images/logo/dxc/dxc_symbol_blk_rgb_300.png" />
+    <!--build:js assets/js/main.min.js -->
+    <script src="assets/js/jquery-2.2.1.js"></script>
+    <script src="assets/js/angular.min.js"></script>
+    <script src="assets/js/angular-animate.min.js"></script>
+    <script src="assets/js/angular-aria.min.js"></script>
+    <script src="assets/js/angular-material.min.js"></script>
+    <script src="assets/js/angular-messages.min.js"></script>
+    <script src="assets/js/jquery.scrollbar.min.js"></script>
+    <script src="assets/libraries/Highcharts/highcharts.js"></script>
+    <script src="assets/libraries/Highcharts/highcharts-3d.js"></script>
+    <script src="assets/libraries/Highcharts/latlong.js"></script>
+    <script src="assets/libraries/Highcharts/map.js"></script>
+    <script src="assets/libraries/Highcharts/data.js"></script>
+    <script src="assets/libraries/Highcharts/world.js"></script>
+    <script src="assets/js/uirouter.js"></script>
+    <script src="assets/js/moment.js"></script>
+    <script src="api/mapindices.js"></script>
+    <script src="assets/libraries/Highcharts/svgfills.js"></script>
+    <!-- endbuild -->
+    <!--build:js angular/angular.min.js -->
+    <script src="angular/shared/appDirectives.js"></script>
+    <script src="angular/shared/appConstants.js"></script>
+    <script src="angular/shared/appFactory.js"></script>
+    <script src="angular/shared/appRouter.js"></script>
+    <script src="angular/main.js"></script>
+    <script src="angular/components/Site/siteFactory.js"></script>
+    <script src="angular/components/Site/siteController.js"></script>
+    <script src="angular/components/Home/homeFactory.js"></script>
+    <script src="angular/components/Home/homeController.js"></script>
+    <!-- endbuild -->
+    <!--build:css css/styles.min.css-->
+    <link rel="stylesheet" href="assets/css/jquery.scrollbar.css">
+    <link rel="stylesheet" href="assets/css/material.css">
+    <link rel="stylesheet" href="assets/css/mainstyle.css">
+    <!--endbuild-->
+</head>
+<body ng-app="MainApplication" ng-controller="MainController" ng-cloak>
+    <loader ng-if="LoadState.State"></loader>
+    <div class="main-container" layout>
+        <div flex layout laoyut-align="center center">
+        </div>
+        <div ui-view flex></div>
+    </div>
+</body>
+</html>

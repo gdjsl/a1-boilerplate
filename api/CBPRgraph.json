@@ -1,0 +1,157 @@
+{
+  "id": "58afe37971bdbd222508db9a",
+  "name": "Hawkster",
+  "data": {
+    "status": "Red"
+  },
+  "children": [
+    {
+      "id": "58afe37972b290a82045c045",
+      "name": "Terrasys",
+      "data": {
+        "status": "No Data"
+      },
+      "children": [
+        {
+          "id": "58afe37959a9f1b59849f98d",
+          "name": "Olucore",
+          "data": {
+            "status": "Downtime"
+          }
+        },
+        {
+          "id": "58afe379dd894d7165e5d014",
+          "name": "Trollery",
+          "data": {
+            "status": "Downtime"
+          }
+        },
+        {
+          "id": "58afe379e532da6c3bcaec46",
+          "name": "Acumentor",
+          "data": {
+            "status": "No Data"
+          }
+        },
+        {
+          "id": "58afe3795391a9c085129426",
+          "name": "Moreganic",
+          "data": {
+            "status": "Downtime"
+          }
+        }
+      ]
+    },
+    {
+      "id": "58afe379079c0eb78c3f0387",
+      "name": "Comtext",
+      "data": {
+        "status": "Red"
+      },
+      "children": [
+        {
+          "id": "58afe379e7c43b2493d1d63f",
+          "name": "Pharmacon",
+          "data": {
+            "status": "Red"
+          }
+        },
+        {
+          "id": "58afe37906463f266167bb81",
+          "name": "Zidant",
+          "data": {
+            "status": "Downtime"
+          }
+        },
+        {
+          "id": "58afe3799d68fbbad7582bb6",
+          "name": "Waretel",
+          "data": {
+            "status": "Downtime"
+          }
+        },
+        {
+          "id": "58afe379e5789f40059b238c",
+          "name": "Quordate",
+          "data": {
+            "status": "No Data"
+          }
+        }
+      ]
+    },
+    {
+      "id": "58afe379ea7d2215acefa527",
+      "name": "Comveyer",
+      "data": {
+        "status": "Green"
+      },
+      "children": [
+        {
+          "id": "58afe379573a74a8ecb80d32",
+          "name": "Qimonk",
+          "data": {
+            "status": "Red"
+          }
+        },
+        {
+          "id": "58afe379223b8c65aae6dd59",
+          "name": "Glukgluk",
+          "data": {
+            "status": "No Data"
+          }
+        },
+        {
+          "id": "58afe3795a6726c2a5870bca",
+          "name": "Decratex",
+          "data": {
+            "status": "Green"
+          }
+        },
+        {
+          "id": "58afe379897da049e1d13b2f",
+          "name": "Rockabye",
+          "data": {
+            "status": "Downtime"
+          }
+        }
+      ]
+    },
+    {
+      "id": "58afe379231c7d779c0d62e2",
+      "name": "Ramjob",
+      "data": {
+        "status": "No Data"
+      },
+      "children": [
+        {
+          "id": "58afe379dd3df841570b2961",
+          "name": "Xleen",
+          "data": {
+            "status": "Red"
+          }
+        },
+        {
+          "id": "58afe3790291e73ad6da34f7",
+          "name": "Senmao",
+          "data": {
+            "status": "Downtime"
+          }
+        },
+        {
+          "id": "58afe3791ef14e5408e649b1",
+          "name": "Xeronk",
+          "data": {
+            "status": "Green"
+          }
+        },
+        {
+          "id": "58afe379b735bf678ad4f9b3",
+          "name": "Fleetmix",
+          "data": {
+            "status": "Green"
+          }
+        }
+      ]
+    }
+  ]
+}

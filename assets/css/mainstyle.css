@@ -1,0 +1,439 @@
+
+
+/* START OF SCROLLBAR */
+.scrollbar-rail > .scroll-element {
+    background-color: transparent;
+}
+
+    .scrollbar-rail > .scroll-element .scroll-bar {
+        background-color: black;
+    }
+
+/* END OF SCROLLBAR */
+
+/* latin */
+@font-face {
+    font-family: 'Syncopate';
+    font-style: normal;
+    font-weight: 400;
+    src: url("/assets/fonts/other/sync.woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+* {
+    outline: none;
+}
+
+@font-face {
+    font-family: dxc-font;
+    src: url("/assets/fonts/GT-Walsheim-Regular.otf");
+}
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Material Icons'), local('MaterialIcons-Regular'), url(../fonts/MaterialIcons.woff2) format('woff2');
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+.span-height {
+    height: 100%;
+}
+
+.span-width {
+    width: 100%;
+}
+
+.test-g {
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+/*Start: General Keyframes*/
+
+@keyframes top-to-bottom {
+    from {
+        transform: translateY(300%);
+    }
+
+    to {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes top-to-bottom-r {
+    to {
+        transform: translateY(300%);
+    }
+
+    from {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes bottom-to-top {
+    from {
+        transform: translateY(-300%);
+    }
+
+    to {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes bottom-to-top-r {
+    to {
+        transform: translateY(-300%);
+    }
+
+    from {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes right-to-left {
+    from {
+        transform: translateX(300%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes right-to-left-r {
+    to {
+        transform: translateX(300%);
+    }
+
+    from {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes left-to-right {
+    from {
+        transform: translateX(-300%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes left-to-right-r {
+    to {
+        transform: translateX(-300%);
+    }
+
+    from {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes scale-in {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes scale-out {
+    to {
+        transform: scale(0);
+    }
+
+    from {
+        transform: scale(1);
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    to {
+        opacity: 0;
+    }
+
+    from {
+        opacity: 1;
+    }
+}
+/*End: General Keyframes*/
+
+/* Start: Master Page Design */
+
+body {
+    background: #455a64;
+    background: -webkit-linear-gradient(to right, #000a12 0%, #263238 90%);
+    background: -moz-linear-gradient(to right, #000a12 0% #263238 90%);
+    background: linear-gradient(to right, #000a12 0%, #263238 90%);
+    font-family: dxc-font;
+    overflow: hidden;
+    position: relative;
+}
+
+    body * {
+        cursor: default;
+        user-select: none;
+    }
+
+    body div.left-bar {
+        z-index: 10;
+        position: absolute;
+        left: 0%;
+        height: 100%;
+        width: 5%;
+        background-color: #000a12;
+        /*border-right: 0.07vw solid rgba(36, 48, 54,0.75);*/
+    }
+
+    body div.main-container {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0%;
+        top: 0%;
+        z-index: 1;
+    }
+/* End: Master Page Design */
+
+/* Start: Loader */
+loader {
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    position: absolute;
+    background-color: rgba(4,4,4,0.2);
+    left: 0;
+    top: 0;
+    animation: fade-in 1s;
+}
+
+    loader.ng-leave {
+        animation: fade-out 1s;
+    }
+
+#xLoader .crossing-shapes {
+    position: relative;
+    top: 50%;
+    left: 50%;
+}
+
+    #xLoader .crossing-shapes:before {
+        width: 20px;
+        height: 20px;
+        border-radius: 20px;
+        background: blue;
+        content: '';
+        position: absolute;
+        background: #00e5ff;
+        -webkit-animation: xLoaderCrossingShapesBefore 1.5s infinite ease-in-out;
+        -moz-animation: xLoaderCrossingShapesBefore 1.5s infinite ease-in-out;
+        -ms-animation: xLoaderCrossingShapesBefore 1.5s infinite ease-in-out;
+        -o-animation: xLoaderCrossingShapesBefore 1.5s infinite ease-in-out;
+        animation: xLoaderCrossingShapesBefore 1.5s infinite ease-in-out;
+    }
+
+    #xLoader .crossing-shapes:after {
+        width: 20px;
+        height: 20px;
+        border-radius: 20px;
+        background: blue;
+        content: '';
+        position: absolute;
+        background: rgb(255, 216, 0);
+        left: 22px;
+        -webkit-animation: xLoaderCrossingShapesAfter 1.5s infinite ease-in-out;
+        -moz-animation: xLoaderCrossingShapesAfter 1.5s infinite ease-in-out;
+        -ms-animation: xLoaderCrossingShapesAfter 1.5s infinite ease-in-out;
+        -o-animation: xLoaderCrossingShapesAfter 1.5s infinite ease-in-out;
+        animation: xLoaderCrossingShapesAfter 1.5s infinite ease-in-out;
+    }
+
+@-webkit-keyframes xLoaderCrossingShapesBefore {
+    0% {
+        transform: translateX(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateX(50px) scale(1.2) rotate(260deg);
+        background: rgb(255, 216, 0);
+        border-radius: 0;
+    }
+
+    100% {
+        transform: translateX(0) rotate(0deg);
+    }
+}
+
+@-moz-keyframes xLoaderCrossingShapesBefore {
+    0% {
+        transform: translateX(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateX(50px) scale(1.2) rotate(260deg);
+        background: rgb(255, 216, 0);
+        border-radius: 0;
+    }
+
+    100% {
+        transform: translateX(0) rotate(0deg);
+    }
+}
+
+@-ms-keyframes xLoaderCrossingShapesBefore {
+    0% {
+        transform: translateX(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateX(50px) scale(1.2) rotate(260deg);
+        background: rgb(255, 216, 0);
+        border-radius: 0;
+    }
+
+    100% {
+        transform: translateX(0) rotate(0deg);
+    }
+}
+
+@-o-keyframes xLoaderCrossingShapesBefore {
+    0% {
+        transform: translateX(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateX(50px) scale(1.2) rotate(260deg);
+        background: rgb(255, 216, 0);
+        border-radius: 0;
+    }
+
+    100% {
+        transform: translateX(0) rotate(0deg);
+    }
+}
+
+@keyframes xLoaderCrossingShapesBefore {
+    0% {
+        transform: translateX(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateX(50px) scale(1.2) rotate(260deg);
+        background: rgb(255, 216, 0);
+        border-radius: 0;
+    }
+
+    100% {
+        transform: translateX(0) rotate(0deg);
+    }
+}
+
+@-webkit-keyframes xLoaderCrossingShapesAfter {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-50px) scale(1.2) rotate(-260deg);
+        background: #00e5ff;
+        border-radius: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@-moz-keyframes xLoaderCrossingShapesAfter {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-50px) scale(1.2) rotate(-260deg);
+        background: #00e5ff;
+        border-radius: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@-ms-keyframes xLoaderCrossingShapesAfter {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-50px) scale(1.2) rotate(-260deg);
+        background: #00e5ff;
+        border-radius: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@-o-keyframes xLoaderCrossingShapesAfter {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-50px) scale(1.2) rotate(-260deg);
+        background: #00e5ff;
+        border-radius: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes xLoaderCrossingShapesAfter {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-50px) scale(1.2) rotate(-260deg);
+        background: #00e5ff;
+        border-radius: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+/* End: Loader */

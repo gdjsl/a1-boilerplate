@@ -1,0 +1,9 @@
+{
+    "jscodehints.detectedExclusions": [
+        "C:/xampp/htdocs/pektounleashed/app/angular/Dashboard/Sone/soneController.js",
+        "C:/xampp/htdocs/pektounleashed/app/angular/Dashboard/Dio/dioController.js",
+        "C:/xampp/htdocs/pektounleashed/app/api/mapindices.js",
+        "C:/xampp/htdocs/pektounleashed/app/assets/libraries/Highcharts/world.js",
+        "C:/xampp/htdocs/pektounleashed/app/angular/Dashboard/Chnu/chnuController.js"
+    ]
+}
